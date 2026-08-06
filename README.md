@@ -22,32 +22,30 @@ Aquecer minha habilidade em engenharia de dados com um dataset do kaggle fictíc
 - Comando para rodar os testes unitários: `pytest tests/ -v`
 
 ## Estrutura de pastas
+Estrutura gerada com a extensão Draw Folder Structure do Krivoox no VSCODE
 ```
-└── 📁data
+└── 📁data                                         # Repositório local de dados
     └── 📁processed
     └── 📁raw
         ├── global_freelancers_raw.csv
         └── global-freelancers-raw-dataset.zip
-└── 📁src
-    └── 📁__pycache__
-        ├── __init__.cpython-312.pyc
-        ├── extract.cpython-312.pyc
-    └── 📁utils
-        └── 📁__pycache__
-            ├── __init__.cpython-312.pyc
-            ├── decorators.cpython-312.pyc
-        ├── __init__.py
+└── 📁src                                          # Módulos python
+    └── 📁utils                                    # Funções utilitárias
         ├── decorators.py
-    ├── __init__.py
-    ├── extract.py
-    ├── load.py
-    └── transform.py
-└── 📁tests
+    └── 📁etl                                      # Funções de ETL
+        ├── __init__.py
+        ├── extract.py
+        ├── load.py
+        └── transform.py
+└── 📁tests                                        # Testes
     └── __init__.py
     ├── test_decorators.py
     └── test_extract.py
 └── .gitignore
-└── main.py
+└── main.py                                         # Script principal
 └── README.md
 └── requirements.txt
 ```
+
+## Referências 
+[DATASET](https://www.kaggle.com/datasets/urvishahir/global-freelancers-raw-dataset?select=global_freelancers_raw.csv)

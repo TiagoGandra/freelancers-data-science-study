@@ -1,6 +1,6 @@
 import pandas as pd
 import pytest
-from src.extract import extract_dataset
+from src.etl.extract import extract_dataset
 
 def test_arquivo_nao_encontrado(caplog):
     """
